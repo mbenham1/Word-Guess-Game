@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Pyschic Game!</h1>
+        <h2>What letter am I thinking of?</h2>
+        <p id="wins-text">Wins: 0</p>
+        <p id="losses-text">Losses: 0</p>
+        <p id="left-text">Guesses Left: 10</p>
+        <p id="previous-text">Previous Guesses: </p>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"> </script>
+    <!-- <script type="text/javascript">
+        var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+        var wins = 0;
+        var losses = 0;
+        var left = 10;
+        var previous = [];
+
+        var winsText = document.getElementById("wins-text");
+        var lossesText = document.getElementById("losses-text");
+        var leftText = document.getElementById("left-text");
+        var previousText = document.getElementById("previous-text");
+
+        document.onkeypress = function (event) {
+
+            // Determines which key was pressed.
+            var userGuess = event.key;
+
+            // Randomly chooses a choice from the options array. This is the Computer's guess.
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            alert("You chose: " + userGuess + " and the computer chose: " + computerGuess);
+
+            previous.push(userGuess);
+
+            if (left > 0) {
+                if (userGuess === computerGuess) {
+                wins++;
+                alert("You won!");
+            } else {
+                losses++;
+                left--;
+            }
+        } if (left === 0) {
+            alert("Game Over")
+            left === 10;
+        }
+
+            winsText.textContent = "Wins: " + wins;
+            lossesText.textContent = "Losses: " + losses;
+            leftText.textContent = "Guesses left: " + left;
+            previousText.textContent = "Previous Guesses: " + previous + " ";
+        };
+
+    </script> -->
+</body>
+
+</html>
